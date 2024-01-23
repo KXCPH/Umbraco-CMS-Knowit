@@ -435,6 +435,7 @@
     <Compile Include="Editors\Binders\BlueprintItemBinder.cs" />
     <Compile Include="UmbracoApplicationBase.cs" />
     <Compile Include="WebApi\Filters\HttpQueryStringModelBinder.cs" />
+    <Compile Include="WebApi\Filters\UmbracoBlueprintAuthorizeAttribute.cs" />
     <Compile Include="WebApi\HttpActionContextExtensions.cs" />
     <Compile Include="Models\ContentEditing\IContentSave.cs" />
     <Compile Include="WebApi\SerializeVersionAttribute.cs" />

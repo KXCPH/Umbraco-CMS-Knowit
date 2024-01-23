@@ -170,6 +170,12 @@ namespace Umbraco.Core
             /// Returns true if TinyMCE scripting sanitization should be applied
             /// </summary>
             public const string SanitizeTinyMce = "Umbraco.Web.SanitizeTinyMce";
+
+            /// <summary>
+            /// Allows creating and deleting blueprints who has Constant.Trees.Content access
+            /// NOTE: This downgrades security of ContentController/PostSaveBlueprint and ContentController/DeleteBlueprint 
+            /// </summary>
+            public const string DowngradeBlueprintSecurity = "Umbraco.Web.DowngradeBlueprintSecurity";
         }
     }
 }

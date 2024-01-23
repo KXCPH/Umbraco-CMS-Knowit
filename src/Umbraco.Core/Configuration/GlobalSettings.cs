@@ -417,6 +417,23 @@ namespace Umbraco.Core.Configuration
         }
 
         /// <summary>
+        /// Returns true if Blueprints should be savable and removable by users who only has Content access
+        /// </summary>
+        public bool DowngradeBlueprintSecurity
+        {
+            get
+            {
+                try
+                {
+                    return bool.Parse(ConfigurationManager.AppSettings[Constants.AppSettings.DowngradeBlueprintSecurity]);
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+        }
+        /// <summary>
         /// An int value representing the time in milliseconds to lock the database for a write operation
         /// </summary>
         /// <remarks>

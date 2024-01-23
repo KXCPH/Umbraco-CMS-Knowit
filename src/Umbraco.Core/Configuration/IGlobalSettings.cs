@@ -82,5 +82,10 @@
         /// Returns true if TinyMCE scripting sanitization should be applied
         /// </summary>
         bool SanitizeTinyMce { get; }
+
+        /// <summary>
+        /// Returns true if Blueprints should be savable and removable by users who only has Content access
+        /// </summary>
+        bool DowngradeBlueprintSecurity { get; }
     }
 }

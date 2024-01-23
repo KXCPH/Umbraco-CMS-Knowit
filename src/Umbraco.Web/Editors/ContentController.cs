@@ -697,7 +697,7 @@ namespace Umbraco.Web.Editors
         /// Saves content
         /// </summary>
         /// <returns></returns>
-        [UmbracoTreeAuthorize(Constants.Trees.DocumentTypes)]
+        [UmbracoBlueprintAuthorize(Constants.Trees.DocumentTypes)]
         [FileUploadCleanupFilter]
         [ContentSaveValidation(skipUserAccessValidation:true)] // skip user access validation because we "only" require Settings access to create new blueprints from scratch
         public ContentItemDisplay PostSaveBlueprint([ModelBinder(typeof(BlueprintItemBinder))] ContentItemSave contentItem)
@@ -1588,7 +1588,7 @@ namespace Umbraco.Web.Editors
 
         }
 
-        [UmbracoTreeAuthorize(Constants.Trees.DocumentTypes)]
+        [UmbracoBlueprintAuthorize(Constants.Trees.DocumentTypes)]
         [HttpDelete]
         [HttpPost]
         public HttpResponseMessage DeleteBlueprint(int id)
